@@ -1,3 +1,12 @@
-p {
-    color: #333;
+.header-inner {
+  display: flex;
+  align-items: center; /* vertically centers image with text */
+  gap: 1rem; /* spacing between image and text */
+}
+
+.profile img {
+  width: 120px;     /* make image smaller */
+  height: auto;     /* keep proportions */
+  border-radius: 50%; /* optional: make it circular */
+  object-fit: cover;
 }
