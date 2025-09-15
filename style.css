@@ -59,7 +59,7 @@ img { max-width: 100%; height: auto; display: block; }
 .contact-links a { color: var(--accent); text-decoration: none; font-size: 0.95rem; padding: 6px 8px; border-radius: 8px; }
 .contact-links a:hover { background: rgba(31,111,235,0.06); }
 
-/* Main flow (single column for simplicity) */
+/* Main flow */
 main.container { padding-top: 20px; }
 
 /* Sections */
@@ -73,7 +73,7 @@ section {
 section h2 { margin-bottom: 8px; font-size: 1.05rem; color: var(--text); }
 section p, section li { color: var(--text); font-size: 0.98rem; }
 
-/* Skills grid (simple responsive) */
+/* Skills grid */
 .skills ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -87,7 +87,7 @@ section p, section li { color: var(--text); font-size: 0.98rem; }
 /* Simple spacing for repeated articles */
 .experience article, .projects article, .education article { margin-bottom: 10px; }
 
-/* Quick facts (kept inline as a section) */
+/* Quick facts */
 .quick-facts ul { margin-left: 18px; }
 
 /* Footer */
@@ -97,7 +97,7 @@ section p, section li { color: var(--text); font-size: 0.98rem; }
 a { color: var(--accent); }
 a:focus-visible { outline: 3px solid rgba(31,111,235,0.14); outline-offset: 2px; border-radius: 6px; }
 
-/* Responsive: tighten header on small screens */
+/* Responsive design*/
 @media (max-width: 720px) {
   .header-inner { grid-template-columns: 72px 1fr; gap: 12px; }
   .avatar { width: 72px; height: 72px; }
