@@ -22,16 +22,10 @@ body{
 
 .container{max-width:var(--max-width);margin:0 auto;padding:24px}
 
-/* Keep existing header rules for now (will update next commit) */
-.header-inner {
-  display: flex;
-  align-items: center; /* vertically centers image with text */
-  gap: 1rem; /* spacing between image and text */
-}
+/* Header (grid layout) */
+.site-header{background:linear-gradient(180deg, #ffffff, #fbfdff);box-shadow:0 1px 6px rgba(15,23,42,0.06)}
+.header-inner{display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:center}
+.avatar{width:88px;height:88px;border-radius:14px;object-fit:cover;border:2px solid rgba(0,0,0,0.06)}
 
-.profile img {
-  width: 120px;     /* make image smaller */
-  height: auto;     /* keep proportions */
-  border-radius: 50%; /* optional: make it circular */
-  object-fit: cover;
-}
+
+.profile img { display: block; max-width:100%; height:auto; }
