@@ -1,3 +1,28 @@
+:root{
+  --radius: 12px;
+  --max-width: 1000px;
+  --page-padding: 16px;
+  --font-sans: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --bg: #ffffff;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --accent: #1f6feb;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  background:var(--bg);
+  color:#0f172a;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:var(--max-width);margin:0 auto;padding:24px}
+
+/* Keep existing header rules for now (will update next commit) */
 .header-inner {
   display: flex;
   align-items: center; /* vertically centers image with text */
