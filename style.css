@@ -22,7 +22,8 @@ body{
 
 .container{max-width:var(--max-width);margin:0 auto;padding:24px}
 
-/* Header (grid layout + typography) */
+
+/* Header */
 .site-header{background:linear-gradient(180deg, #ffffff, #fbfdff);box-shadow:0 1px 6px rgba(15,23,42,0.06)}
 .header-inner{display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:center}
 .avatar{width:88px;height:88px;border-radius:14px;object-fit:cover;border:2px solid rgba(0,0,0,0.06)}
@@ -31,6 +32,41 @@ body{
 .contact-links a{display:inline-block;margin-right:12px;padding:6px 8px;border-radius:8px;text-decoration:none;border:1px solid transparent}
 .contact-links a:hover{background:rgba(31,111,235,0.06);border-color:rgba(31,111,235,0.12)}
 
+
 /* Layout */
 main.container{display:grid;grid-template-columns:1fr 320px;gap:32px;padding-top:24px}
 
+
+/* Sections */
+section{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+section h2{margin-top:0;font-size:1.05rem}
+.skills ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-left:18px}
+.experience article, .projects article, .education article{margin-bottom:12px}
+
+
+/* Aside / Sidebar */
+.sidebar{grid-column:1/-1;padding:0 24px}
+
+
+.site-footer{margin-top:36px;padding:24px 0;text-align:center;color:var(--muted)}
+
+
+/* Responsive */
+@media (max-width:900px){
+  .header-inner{grid-template-columns:72px 1fr}
+  main.container{grid-template-columns:1fr;gap:18px}
+  .sidebar{order:3}
+  .container{padding:16px}
+}
+
+
+@media (max-width:420px){
+  .header-inner{gap:12px}
+  .avatar{width:72px;height:72px}
+  .skills ul{grid-template-columns:1fr}
+}
+
+
+/* Typography helpers */
+p, li{font-size:0.98rem}
+a{color:var(--accent)}
