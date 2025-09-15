@@ -10,7 +10,6 @@
   --card-shadow: rgba(15,23,42,0.04);
 }
 
-/* Minimal reset */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
 body {
@@ -43,8 +42,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Avatar */
 .avatar {
-  width: 88px;
-  height: 88px;
+  width: 120px;
+  height: 120px;
   border-radius: 12px;
   object-fit: cover;
   border: 1px solid rgba(0,0,0,0.06);
