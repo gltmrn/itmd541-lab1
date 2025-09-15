@@ -22,10 +22,15 @@ body{
 
 .container{max-width:var(--max-width);margin:0 auto;padding:24px}
 
-/* Header (grid layout) */
+/* Header (grid layout + typography) */
 .site-header{background:linear-gradient(180deg, #ffffff, #fbfdff);box-shadow:0 1px 6px rgba(15,23,42,0.06)}
 .header-inner{display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:center}
 .avatar{width:88px;height:88px;border-radius:14px;object-fit:cover;border:2px solid rgba(0,0,0,0.06)}
+.name{font-size:clamp(1.4rem, 2.8vw, 2.2rem);margin:0}
+.title{margin:6px 0;color:var(--muted)}
+.contact-links a{display:inline-block;margin-right:12px;padding:6px 8px;border-radius:8px;text-decoration:none;border:1px solid transparent}
+.contact-links a:hover{background:rgba(31,111,235,0.06);border-color:rgba(31,111,235,0.12)}
 
+/* Layout */
+main.container{display:grid;grid-template-columns:1fr 320px;gap:32px;padding-top:24px}
 
-.profile img { display: block; max-width:100%; height:auto; }
