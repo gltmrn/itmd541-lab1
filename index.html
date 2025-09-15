@@ -4,49 +4,54 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Giovanny Altamirano — Resume</title>
-    <link href="style.css" rel="stylesheet" />
+
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    /* google font */
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-      :root { --color-txt: blue; }
+
+    <!-- Main stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+
+     <style>
+      
+      :root{
+        --font-sans: 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      }
       * { box-sizing: border-box; }
-      p { color: var(--color-txt); }
-      .container { max-width: 900px; margin: 0 auto; padding: 16px; }
-      .site-footer { margin-top: 32px; padding: 12px 0; border-top: 1px solid #eee; text-align: center; }
-      body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#0f172a; margin:0; }
-      header .hero .name { margin:0 0 6px 0; }
-      section { margin-bottom:18px; }
-      .meta { font-size:0.95rem; color:#374151; }
-      .meta p { margin:4px 0; }
-      ul { margin:8px 0 0 18px; }
-      .muted { color:#6b7280; }
+      html,body { height:100%; }
+      body { margin:0; font-family: var(--font-sans); color:#0f172a; background:#fff; -webkit-font-smoothing:antialiased; }
+      img { max-width:100%; display:block; }
+      a { color: inherit; }
     </style>
   </head>
+
   <body>
-    <header class="site-header">
+    <header class="site-header" role="banner">
       <div class="container header-inner">
         <div class="profile">
-          <img src="profile.jpg" class="avatar" alt="Profile picture of Giovanny Altamirano" />
+          <img src="profile.jpg" class="avatar" alt="Giovanny Altamirano — professional headshot" />
         </div>
+
         <div class="hero">
           <h1 class="name">Giovanny A. Altamirano</h1>
           <p class="title muted">Aspiring Web Developer • ITMD 541 Student</p>
-          <nav class="contact-links" aria-label="contact">
+
+          <nav class="contact-links" aria-label="Contact information">
             <a href="mailto:giovannyaltamirano98@gmail.com">giovannyaltamirano98@gmail.com</a>
             <a href="tel:+12138012285">+1 (213) 801-2285</a>
-            <span class="meta">721 Eucalyptus Av, Santa Barbara, 93101 CA</span>
+            <span class="meta" aria-hidden="true">15W560 91st St, Burr Ridge, 60527 IL</span>
             <a href="https://disk.yandex.ru/d/-_6Akngp3MD34w" target="_blank" rel="noopener">Portfolio</a>
-            <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/gltmrn" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/giovanny-altamirano" target="_blank" rel="noopener">LinkedIn</a>
           </nav>
         </div>
       </div>
     </header>
 
-    <main class="container">
-      <section id="summary" class="summary">
-        <h2>Introduction</h2>
+    <main class="container" role="main">
+      <!-- Introduction -->
+      <section id="summary" class="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Introduction</h2>
         <p>
           I am an interdisciplinary researcher with a background in applied physics, aerospace technology,
           and software development. My experiences in international scientific collaborations and entrepreneurial
@@ -56,8 +61,16 @@
         </p>
       </section>
 
-      <section id="education" class="education">
-        <h2>Education</h2>
+      <!-- Education -->
+      <section id="education" class="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+
+        <!-- Current program -->
+        <article>
+          <h3>Information Technology Management — (in progress)</h3>
+          <p class="meta">Program: Information Technology Management — Software Development branch</p>
+          <p class="meta">Expected graduation: August 2027</p>
+        </article>
 
         <article>
           <h3>Moscow Institute of Physics and Technology (MIPT)</h3>
@@ -88,122 +101,12 @@
         </article>
       </section>
 
-      <section id="research" class="research">
-        <h2>Research & Projects</h2>
+      <!-- Research & Projects -->
+      <section id="research" class="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research & Projects</h2>
 
         <article>
-          <h3>IVOLGA Space Experiment — Laboratory of Applied Infrared Spectroscopy, MIPT</h3>
+          <h3>IVOLGA Space Experiment — Laboratory of Applied Infrared Spectroscopy (MIPT)</h3>
           <p class="meta">Undergraduate research in international collaborations (India, China)</p>
           <ul>
-            <li>Developed high-precision frequency stabilization and calibration systems for diode lasers used in atmospheric spectroscopy (Mars and Venus missions).</li>
-            <li>Contributed to the IVOLGA spectrometer for continuous wind and temperature profiling aboard Shukrayaan-1.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Chinese Space Station — Greenhouse Gas Remote Sensing Project</h3>
-          <ul>
-            <li>Designed algorithms and assembled optical systems for a multi-channel laser heterodyne spectroradiometer to monitor greenhouse gases in Earth's upper atmosphere.</li>
-            <li>Worked on optical design, thermal stabilization, custom electronics, and instrument control software.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>ISSSP 2023 — Team Orion (Silver Medal)</h3>
-          <p class="meta">International Space and Scientific Payload Competition</p>
-          <ul>
-            <li>Part of the only international team awarded a Silver Medal for a payload concept focused on space-based environmental monitoring.</li>
-          </ul>
-        </article>
-
-        <p class="muted">More details and project artifacts available in the portfolio.</p>
-      </section>
-
-      <section id="experience" class="experience">
-        <h2>Professional Experience</h2>
-
-        <article>
-          <h3>ALTAROT&C S.A. — Co-founder & CEO (Ecuador, 2023 – Present)</h3>
-          <ul>
-            <li>Manage a multi-sector remote company specializing in real estate, construction coordination, legal consulting, and tourism.</li>
-            <li>Closed over a dozen real estate transactions; oversaw permitting, legal processes, and client negotiations.</li>
-            <li>Led construction teams, procurement, budgeting, and regulatory compliance.</li>
-            <li>Used mathematical modeling to assess risk and optimize planning; implemented digital workflows to improve operational efficiency.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Laboratory of Applied Infrared Spectroscopy — Technician, Research Assistant & Software Developer (MIPT, 2020 – 2022)</h3>
-          <ul>
-            <li>Developed algorithms in C, C++, and Python for experimental automation, data acquisition, and system control in spectroscopic instruments.</li>
-            <li>Assembled and maintained optical setups and electronic instrumentation; designed and fabricated custom PCBs for sensor interfacing.</li>
-            <li>Contributed to heterodyne spectroradiometer design for greenhouse gas monitoring on the Chinese Space Station.</li>
-            <li>Wrote high-efficiency acquisition code for FPGA systems; performed signal processing and calibration of CO₂ and CH₄ spectra.</li>
-            <li>Engineered high-precision laser frequency stabilization and calibration systems integrating hardware and software.</li>
-            <li>Participated in grant proposals and publications; awarded Silver Medal as part of Team Orion for innovation in climate sensing.</li>
-            <li>Designed a custom software solution for compiling, processing, analyzing, and compressing environmental data from remote monitoring stations.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Valarezo & Valarezo Constructora — Project Manager (Quito, Ecuador, Oct 2024 – Dec 2024)</h3>
-          <ul>
-            <li>Directed residential construction projects from design through delivery; coordinated architecture, engineering, labor, and suppliers.</li>
-            <li>Managed procurement, budgeting, site operations, and client communications.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>MIPT Leveling School — Founder & Lead Instructor (2018 – Present)</h3>
-          <ul>
-            <li>Launched a bilingual STEM preparatory program for Latin American students applying to Russian universities.</li>
-            <li>Created and taught intensive courses in Russian, advanced mathematics, physics, and C programming; mentored 20+ students with high exam success rates.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>National Program for Knowledge Transfer — SENESCYT (Ecuador, 2023 – Present)</h3>
-          <ul>
-            <li>Mathematics instructor (national volunteer program), teaching advanced algebra, calculus, problem-solving, and university-level logic to high-performing students.</li>
-            <li>Provided curriculum development and remote mentorship to empower future STEM leaders.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="languages" class="languages">
-        <h2>Languages</h2>
-        <ul>
-          <li>Native: Spanish</li>
-          <li>Fluent: English, Russian</li>
-          <li>Learning: Japanese (N5)</li>
-          <li>Currently enrolled in a full-time English immersion program (since Jan 2025, California)</li>
-        </ul>
-      </section>
-
-      <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-          <li><strong>Programming:</strong> Python, C, C++, C#, MATLAB, Mathematica, SQL, LaTeX</li>
-          <li><strong>Simulation & Modeling:</strong> FlowVision, OPENFOAM, SolidWorks</li>
-          <li><strong>Hardware & Instrumentation:</strong> LabVIEW, circuit board assembly, soldering, sensor integration</li>
-          <li><strong>Productivity & Data Tools:</strong> Excel, data acquisition systems</li>
-        </ul>
-      </section>
-    </main>
-
-    <aside class="sidebar container">
-      <h2>Quick Facts</h2>
-      <ul>
-        <li>Languages: Spanish, English, Russian</li>
-        <li>Portfolio: <a href="https://disk.yandex.ru/d/-_6Akngp3MD34w" target="_blank" rel="noopener">View portfolio</a></li>
-        <li>Available for graduate study and research opportunities</li>
-      </ul>
-    </aside>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2025 Giovanny Altamirano. Hosted on GitHub Pages.</p>
-      </div>
-    </footer>
-  </body>
-</html>
+            <li>Developed high-precision frequency stabilization and calibration systems for diode lasers used in atmospheric spectroscopy (Mars and Venus miss
