@@ -3,19 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Week 3 Demo — Resume</title>
+    <title>Giovanny Altamirano — Resume</title>
     <link href="style.css" rel="stylesheet" />
     <style>
       :root { --color-txt: blue; }
       * { box-sizing: border-box; }
       p { color: var(--color-txt); }
-      div[data-container-name="This is our div"] { background-color: #f77979; padding: 10px; }
-      div[data-container-name="This is our div"] > p { background-color: #fff; padding: 10px; }
-      .redtext.links { color: yellow; }
-      .redtext { color: red; }
-      .links { color: blueviolet; }
-      #heading2 { color: green; }
       .container { max-width: 900px; margin: 0 auto; padding: 16px; }
+      #heading2 { color: green; }
     </style>
   </head>
   <body>
@@ -55,15 +50,35 @@
           <li>Git &amp; GitHub</li>
           <li>Responsive design &amp; accessibility</li>
           <li>Python &amp; data analysis</li>
+          <li>Team collaboration &amp; project management</li>
         </ul>
       </section>
 
-      <!-- leave the original div block for now; we'll remove it in the next commit -->
-      <div data-container-name="This is our div">
-        <p>Legacy inner paragraph 1</p>
-        <p>Legacy inner paragraph 2</p>
-        <p style="color: red">Legacy inner paragraph 3</p>
-      </div>
+      <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <article>
+          <h3>Technician — Laboratory of Applied Infrared Spectroscopy</h3>
+          <p><strong>MIPT</strong> — Aug 2020 to Aug 2022</p>
+          <p>Worked on high-precision frequency stabilization and calibration of diode lasers used in spectrometers. Contributed both hardware and software components for the IVOLGA experiment.</p>
+        </article>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <article>
+          <h3>IVOLGA Spectrometer (Repository)</h3>
+          <p>Design and build of a heterodyne spectrometer for atmospheric profiling. Implemented calibration routines and instrument control scripts.</p>
+          <p><a href="https://github.com/your-username/ivolga" target="_blank" rel="noopener">View on GitHub</a></p>
+        </article>
+      </section>
     </main>
+
+    <aside class="sidebar container">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li>Languages: Spanish, English, Russian</li>
+        <li>Tools: VS Code, Git</li>
+      </ul>
+    </aside>
   </body>
 </html>
